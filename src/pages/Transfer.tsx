@@ -10,7 +10,7 @@ const Transfer = () => {
   const handleTransfer = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/api/transactions/transfer", {
+      await axios.post("http://localhost:8080/api/transaction", {
         senderAccountNumber: sender,
         receiverAccountNumber: receiver,
         amount: parseFloat(amount),

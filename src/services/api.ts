@@ -9,10 +9,10 @@ export const makeTransfer = (data: {
     senderAccountNumber: string;
     receiverAccountNumber: string;
     amount: number;
-  }) => API.post("/transactions/transfer", data);
+  }) => API.post("/transaction", data);
 
   export const getTransactionsByAccount = (accountNumber: string) =>
-    API.get(`/transactions/account/${accountNumber}`);
+    API.get(`/transaction/${accountNumber}`);
 export const createCustomer = (data: {
   firstName: string;
   lastName: string;

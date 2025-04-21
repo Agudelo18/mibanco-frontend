@@ -18,7 +18,7 @@ const Transactions = () => {
     e.preventDefault();
     try {
       const response = await axios.get<Transaction[]>(
-        `http://localhost:8080/api/transactions/${accountNumber}`
+        `http://localhost:8080/api/transaction/${accountNumber}`
       );
       setTransactions(response.data);
       setMessage(response.data.length ? "" : "No se encontraron transacciones.");
