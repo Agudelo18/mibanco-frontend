@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Clients from "./pages/Clients";
 import Transfer from "./pages/Transfer";
 import Transactions from "./pages/Transactions";
+import CreateCustomer from "./pages/createCustomer";
+import FindCustomer from "./pages/FindCustomer";
 import Sidebar from "./components/Sidebar";
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
             <Route path="/" element={<Clients />} />
             <Route path="/transfer" element={<Transfer />} />
             <Route path="/transactions" element={<Transactions />} />
+            <Route path="/create-customer" element={<CreateCustomer />} />
+            <Route path="/find-customer" element={<FindCustomer />} />
            
           </Routes>
         </div>

@@ -5,8 +5,10 @@ const Sidebar = () => {
 
   const links = [
     { name: "Clientes", path: "/" },
+    { name: "Crear Cliente", path: "/create-customer" },
     { name: "Transferencias", path: "/transfer" },
     { name: "Transacciones", path: "/transactions" },
+    { name: "Buscar Cliente", path: "/find-customer" },
   ];
 
   return (
