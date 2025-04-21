@@ -13,5 +13,12 @@ export const makeTransfer = (data: {
 
   export const getTransactionsByAccount = (accountNumber: string) =>
     API.get(`/transactions/account/${accountNumber}`);
+export const createCustomer = (data: {
+  firstName: string;
+  lastName: string;
+  accountNumber: number;
+  balance: number;
+  }) => API.post("/customers", data);
+export const getCustomerById = (id: number) => API.get(`/customers/${id}`);
   
   
